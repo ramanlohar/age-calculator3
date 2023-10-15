@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ff6666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    height: 90vh;
+}
+
+header{
+    background-color: #3498db;
+    height: 27px;
+    width: 100%;
+    /* Change the background color to your desired color */
+    color: rgb(0, 0, 0);
+    /* Change the text color to white or a contrasting color */
+    padding: 10px 10px;
+    /* Adjust padding as needed */
+    text-align: right;
+    /* Center the text in the header */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* border-radius: 10px; */
+    border-bottom: 1px solid rgb(19, 64, 200);
+}
+
+form {
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+#input_date{
+    display: flex;
+}
+#name{
+    width: 100%;
+}
+.form_element {
+    margin-bottom: 15px;
+    position: relative;
+    width: 95%;
+}
+
+.form_element label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+.form_element input {
+    width: auto;
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btn {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#btn-back{
+    padding: 11px 30px;
+    background-color: #d76208;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: #2980b9;
+}
+/* .btn_div{
+    display: flex;
+    justify-content: center;
+} */
+
+footer {
+    margin-top: 20px;
+    /* Adjusted to margin-top */
+    text-align: center;
+    /* Center the button */
+    position: fixed;
+    bottom: 0;
+    background-color: #3498db;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .form_element input {
+        padding: 10px;
+    }
+
+    #btn {
+        padding: 12px 25px;
+    }
+}
