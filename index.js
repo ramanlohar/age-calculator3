@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const dayInput = document.getElementById('DD');
+    const monthInput = document.getElementById('MM');
+    const yearInput = document.getElementById('YYYY');
+
+    dayInput.addEventListener('input', () => {
+        if (dayInput.value.length === 2) {
+            monthInput.focus();
+            monthInput.select();  // Select the contents of the month input
+        }
+    });
+
+    monthInput.addEventListener('input', () => {
+        if (monthInput.value.length === 2) {
+            yearInput.focus();
+            yearInput.select();  // Select the contents of the year input
+        }
+    });
+});
+
+
 const name1 = document.getElementById("name");
 const DD = document.getElementById("DD");
 const MM = document.getElementById("MM");
